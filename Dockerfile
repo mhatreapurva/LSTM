@@ -15,3 +15,7 @@ RUN pip install --no-cache-dir -r build_dependencies.txt
 # Make port 4000 available to the world outside this container
 EXPOSE 4000
 
+ENV PYTHONPATH /workspace
+
+
+
