@@ -25,7 +25,9 @@ fi
 
 # Start a new container and get an interactive shell
 echo "Starting new container $CONTAINER_NAME..."
-docker run -it -d --name $CONTAINER_NAME $IMAGE_NAME
+# docker run -d -p 4000:4000 --name $CONTAINER_NAME $IMAGE_NAME
+docker run -it -d -p 4000:4000 --name $CONTAINER_NAME -v "$(pwd)":/workspace $IMAGE_NAME
+
 
 # Note: Removed incorrect docker exec command
 # If you need to attach to the container after it's started, use:
