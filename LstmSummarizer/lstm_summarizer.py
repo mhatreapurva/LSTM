@@ -1,7 +1,6 @@
 import torch.nn as nn
-from LstmModel.lstm.LSTM import LSTM
+from LstmModel.lstm import LSTM
 
-# Assuming you have the LSTM and LSTMCell classes defined as in your code
 
 class Summarizer(nn.Module):
     def __init__(self, lstm_input_size, lstm_hidden_size, lstm_num_layers, summary_output_size):
