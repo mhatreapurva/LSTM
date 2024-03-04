@@ -1,5 +1,5 @@
 import torch.nn as nn
-from LstmModel.lstm.LSTM import LSTM
+from LstmModel.lstm import LSTM
 
 # Assuming you have the LSTM and LSTMCell classes defined as in your code
 

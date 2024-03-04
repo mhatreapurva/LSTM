@@ -26,6 +26,7 @@ class LSTMCell(nn.Module):
         self.co = nn.Linear(hidden_size, hidden_size)
 
     def forward(self, x, h, c):
+        breakpoint()
         x = x.view(-1, self.input_size)
         h = h.view(-1, self.hidden_size)
         c = c.view(-1, self.hidden_size)
