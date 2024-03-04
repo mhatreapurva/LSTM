@@ -4,7 +4,7 @@
 docker rm -vf $(docker ps -aq)
 
 # Define image and container names
-TAG="armhate-dev"
+TAG="avanti-dev"
 IMAGE_NAME="lstm:${TAG}"
 CONTAINER_NAME="lstm"
 
